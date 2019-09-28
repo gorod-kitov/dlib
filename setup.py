@@ -44,6 +44,9 @@ from setuptools.command.build_ext import build_ext
 from distutils.version import LooseVersion
 
 
+os.environ["CC"] = "gcc-6"
+
+
 def get_extra_cmake_options():
     """read --clean, --no, --set, --compiler-flags, and -G options from the command line and add them as cmake switches.
     """
